@@ -1,0 +1,118 @@
+:root {
+  --fontbase: "Open Sans", sans-serif;
+  --headline1: 700 60px/82px var(--fontbase);
+  --headline2: 700 40px/55px var(--fontbase);
+  --headline3: 700 17px/23px var(--fontbase);
+  --headline4: 700 35px/47px var(--fontbase);
+  --basefont1: 400 16px/24px var(--fontbase);
+  --basefont2: 400 11px/15px var(--fontbase);
+  --white: #fff;
+  --pink: #e83e8c;
+  --info: #17a2b8;
+  --black: #212529;
+  --gris: #707070;
+}
+
+body {
+  font: var(--basefont1);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: var(--pink);
+}
+
+.navbar {
+  background: var(--pink);
+}
+
+.title {
+  font: var(--headline4);
+  color: var(--gris);
+  text-align: center;
+  padding: 40px 0;
+}
+
+.section {
+  max-width: 920px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-bottom: 100px;
+}
+
+.card {
+  padding: 0;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.card-title {
+  font: var(--headline3);
+}
+
+.card-text {
+  font: var(--basefont1);
+}
+
+.list-group-item,
+.card-link {
+  font: var(--basefont2);
+}
+
+.pago {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--info);
+  color: var(--white);
+  padding: 50px 120px;
+}
+
+.pago h3 {
+  font: var(--headline2);
+}
+
+.pago i {
+  font-size: 80px;
+  margin-right: 28px;
+}
+
+.footer {
+  background: var(--pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.footer img {
+  height: 100px;
+}
+@media screen and (min-width: 900px) {
+  .section {
+    justify-content: space-between;
+  }
+
+  .title {
+    font: var(--headline1);
+    color: var(--gris);
+    text-align: center;
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    padding: 0 120px;
+  }
+
+  .pago {
+    display: flex;
+  }
+}
